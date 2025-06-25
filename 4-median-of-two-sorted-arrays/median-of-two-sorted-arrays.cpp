@@ -2,7 +2,7 @@ class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         int n1 = nums1.size(), n2 = nums2.size();
-        if (n1 > n2) return findMedianSortedArrays(nums2, nums1); // ensure binary search on smaller array
+        if (n1 > n2) return findMedianSortedArrays(nums2, nums1); 
 
         int low = 0, high = n1;
         int total = n1 + n2;
